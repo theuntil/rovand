@@ -2,106 +2,124 @@ import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black pt-20 pb-10 px-6">
-      <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row gap-16">
+    <footer className="w-full bg-black pt-20 pb-12 px-6 border-t border-white/10">
+      <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
 
-        {/* ----------------- LEFT SIDE — 35% (MOBILDE ALTA INER) ----------------- */}
-        <div className="flex flex-col gap-6 md:w-[35%] order-2 md:order-0">
+        {/* ----------------------------------------------------------
+            1) LEFT COLUMN — LOGO + COMPANY INFO
+        ---------------------------------------------------------- */}
+        <div className="flex flex-col gap-6">
 
           {/* LOGO */}
           <div className="flex items-center gap-2">
             <img
               src="/src/assets/rovand_logo.png"
-              className="h-5 object-contain"
+              className="h-5 object-contain opacity-90"
             />
           </div>
 
           {/* COMPANY INFO */}
-<p className="text-white/50 text-xs -mt-4 leading-relaxed flex items-center gap-1">
-  <a
-    href="https://find-and-update.company-information.service.gov.uk/company/16724239"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs font-medium text-white hover:text-blue-300 transition  flex items-center gap-1"
-  >
-    16724239
-    <ArrowUpRight className="w-4 h-4" />
-  </a>
-
-  <span>Registered in England.</span>
-</p>
-
-          {/* ----------------- STORE BADGES ----------------- */}
-          <div className="flex flex-col gap-3 mt-2">
-
-            {/* APP STORE */}
+          <p className="text-white/50 text-xs leading-relaxed flex items-center gap-2">
             <a
-              href="#"
-              className="w-52 bg-white text-black rounded-3xl flex items-start gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+              href="https://find-and-update.company-information.service.gov.uk/company/16724239"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-white hover:text-blue-300 transition flex items-center gap-1"
             >
-              <img src="/src/assets/appstore.png" className="w-7" />
-              <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">Download on the</span>
-                <span className="text-[14px] font-semibold">App Store</span>
-              </div>
+              16724239
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
-
-            {/* GOOGLE PLAY */}
-            <a
-              href="#"
-              className="w-52 bg-white text-black rounded-3xl flex items-start gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
-            >
-              <img src="/src/assets/googleplay.webp" className="w-7" />
-              <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">GET IT ON</span>
-                <span className="text-[14px] font-semibold">Google Play</span>
-              </div>
-            </a>
-
-            {/* APP GALLERY */}
-            <a
-              href="#"
-              className="w-52 bg-white text-black rounded-3xl flex items-start gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
-            >
-              <img src="/src/assets/appgallery.png" className="w-7" />
-              <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">Explore it on</span>
-                <span className="text-[14px] font-semibold">AppGallery</span>
-              </div>
-            </a>
-
-          </div>
+            <span>Registered in England.</span>
+          </p>
         </div>
 
-        {/* ----------------- RIGHT SIDE — 65% (DESKTOPTA SAGDA, MOBILDE EN ÜSTTE) ----------------- */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-start md:w-[65%] 
-                        text-center md:text-left gap-20 md:gap-32 mx-auto order-1 md:order-0">
+        {/* ----------------------------------------------------------
+            2) CENTER COLUMN — NAVIGATION (Company + Socials)
+        ---------------------------------------------------------- */}
+        <div className="flex justify-between md:justify-start md:gap-24">
 
-          {/* NAVIGATION */}
-          <div className="flex flex-col gap-4 items-center md:items-start">
-            <h4 className="text-white text-lg">COMPANY</h4>
+          {/* COMPANY LINKS */}
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-sm font-semibold tracking-wide">
+              COMPANY
+            </h4>
+
             <ul className="flex flex-col gap-2 text-white/60 text-sm">
-            
               <li className="hover:text-white transition cursor-pointer">Our Brands</li>
               <li className="hover:text-white transition cursor-pointer">Contact</li>
               <li className="hover:text-white transition cursor-pointer">Support</li>
               <li className="hover:text-white transition cursor-pointer">FAQ</li>
-              <li className="hover:text-white transition cursor-pointer"></li>
             </ul>
           </div>
 
           {/* SOCIALS */}
-          <div className="flex flex-col gap-4 items-center md:items-start">
-            <h4 className="text-white text-lg">SOCİALS</h4>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white text-sm font-semibold tracking-wide">
+              SOCIALS
+            </h4>
+
             <ul className="flex flex-col gap-2 text-white/60 text-sm">
               <li className="hover:text-white transition cursor-pointer">Twitter (X)</li>
               <li className="hover:text-white transition cursor-pointer">Instagram</li>
               <li className="hover:text-white transition cursor-pointer">Facebook</li>
             </ul>
           </div>
-
         </div>
 
+        {/* ----------------------------------------------------------
+            3) RIGHT COLUMN — APP STORE / PLAY STORE / GALLERY
+        ---------------------------------------------------------- */}
+        <div className="flex flex-col gap-4">
+
+          <h4 className="text-white text-sm font-semibold tracking-wide mb-2">
+            DOWNLOAD OUR APPS
+          </h4>
+
+          <div className="flex flex-col gap-4">
+
+            {/* APP STORE */}
+            <a
+              href="#"
+              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+            >
+              <img src="/src/assets/appstore.png" className="w-7" />
+              <div className="flex flex-col leading-tight text-left">
+                <span className="text-[10px] text-black/70">Download on the</span>
+                <span className="text-[14px] font-semibold text-black">App Store</span>
+              </div>
+            </a>
+
+            {/* GOOGLE PLAY */}
+            <a
+              href="#"
+              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+            >
+              <img src="/src/assets/googleplay.webp" className="w-7" />
+              <div className="flex flex-col leading-tight text-left">
+                <span className="text-[10px] text-black/70">GET IT ON</span>
+                <span className="text-[14px] font-semibold text-black">Google Play</span>
+              </div>
+            </a>
+
+            {/* APP GALLERY */}
+            <a
+              href="#"
+              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+            >
+              <img src="/src/assets/appgallery.png" className="w-7" />
+              <div className="flex flex-col leading-tight text-left">
+                <span className="text-[10px] text-black/70">Explore it on</span>
+                <span className="text-[14px] font-semibold text-black">AppGallery</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      {/* ------------------ COPYRIGHT ------------------ */}
+      <div className="mt-16 text-center text-white/40 text-xs">
+        © {new Date().getFullYear()} Rovand Limited. All rights reserved.
       </div>
     </footer>
   );

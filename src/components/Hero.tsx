@@ -1,23 +1,34 @@
 import { motion } from "framer-motion";
 import BlurText from "./BlurText";
 import { ArrowUpRight } from "lucide-react";
-import LogoLoop from "./LogoLoop";
-import HeroInfoRotator from "./HeroInfoRotator";
-// 🔥 TÜM LOGOLAR favicon.png kullanıyor
-const techLogos = [
-  { src: "/favicon.png", alt: "logo1", href: "#" },
-  { src: "/favicon.png", alt: "logo2", href: "#" },
-  { src: "/favicon.png", alt: "logo3", href: "#" },
-  { src: "/favicon.png", alt: "logo4", href: "#" },
-  { src: "/favicon.png", alt: "logo5", href: "#" },
-  { src: "/favicon.png", alt: "logo6", href: "#" },
-];
 
+import HeroInfoRotator from "./HeroInfoRotator";
+import Dither from "./Dither"; // ⭐ DITHER IMPORT
 const Hero = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center">
 
-      {/* BACKGROUND */}
+      {/* ⭐ DITHER BACKGROUND (FULLSCREEN) ⭐ */}
+     <div className="absolute inset-0 z-10">
+  <div className="absolute inset-0">
+    <Dither
+      waveColor={[0.5, 0.5, 0.5]}
+      disableAnimation={false}
+      enableMouseInteraction={true}
+      mouseRadius={0.3}
+      colorNum={4}
+      waveAmplitude={0.3}
+      waveFrequency={3}
+      waveSpeed={0.05}
+    />
+  </div>
+
+  {/* ⭐ Aşağıdan yukarı gradient shadow overlay ⭐ */}
+  <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent pointer-events-none"></div>
+</div>
+
+
+      {/* İstersen bu eski background efektini silebilirsin */}
       <div className="background absolute inset-0 -z-10">
         {[...Array(31)].map((_, i) => (
           <span key={i}></span>
@@ -61,34 +72,9 @@ const Hero = () => {
       </motion.div>
 
       {/* CARD */}
-       <HeroInfoRotator />
+      <HeroInfoRotator />
 
-
-      {/* ⭐ LOGO LOOP (FAVICON) ⭐ */}
-      <div className="relative z-10 mt-16 w-full flex justify-center px-4">
-        <div className="w-full md:w-[60%] flex flex-col items-center">
-
-          <h3 className="text-white/70 text-sm mb-4 tracking-wide uppercase">
-            OUR BRANDS
-          </h3>
-
-          <div className="w-full h-80px relative overflow-hidden">
-            <LogoLoop
-              logos={techLogos}
-              speed={90}
-              direction="left"
-              logoHeight={42}
-              gap={35}
-              hoverSpeed={0}
-              fadeOut
-              fadeOutColor="#000"
-              ariaLabel="Brand logos"
-            />
-          </div>
-
-        </div>
-      </div>
-
+      
     </section>
   );
 };

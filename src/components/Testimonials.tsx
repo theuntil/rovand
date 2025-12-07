@@ -91,7 +91,7 @@ const Testimonials = () => {
               <p className="text-white/90 text-[13px] leading-relaxed">{t.text}</p>
 
               <div className="flex items-center gap-3 mt-4">
-                <img src={t.img} className="w-6 h-6 rounded-full object-cover" />
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/12/54/profile-2398783_1280.png" className="w-6 h-6 rounded-full object-cover" />
                 <div className="flex flex-col">
                   <span className="text-white text-[12px]">{t.name}</span>
                   <span className="text-white/50 text-[10px]">{t.title}</span>
