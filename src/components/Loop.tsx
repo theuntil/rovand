@@ -14,8 +14,8 @@ export default function BrandsSection() {
   return (
     <div className="w-full flex justify-center mb-20">
       <div className="w-full md:w-[60%] flex flex-col items-center">
-        <h3 className="text-white/70 text-xs mb-4 tracking-wide uppercase">
-          OUR BRANDS
+        <h3 className="text-white/70 text-xs mb-4 tracking-wide">
+          Our Brands
         </h3>
 
         {/* YÜKSEKLİK EKLEMİYOR — sadece içerik kadar alan kaplıyor */}

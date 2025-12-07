@@ -47,18 +47,7 @@ const Footer = () => {
         <div className="flex justify-between md:justify-start md:gap-24">
 
           {/* COMPANY LINKS */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-white text-sm font-semibold tracking-wide">
-              COMPANY
-            </h4>
-
-            <ul className="flex flex-col gap-2 text-white/60 text-sm">
-              <li className="hover:text-white transition cursor-pointer">Our Brands</li>
-              <li className="hover:text-white transition cursor-pointer">Contact</li>
-              <li className="hover:text-white transition cursor-pointer">Support</li>
-              <li className="hover:text-white transition cursor-pointer">FAQ</li>
-            </ul>
-          </div>
+         
 
           {/* POLICIES (MODAL TRIGGER) */}
           <div className="flex flex-col gap-4">

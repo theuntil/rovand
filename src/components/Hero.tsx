@@ -48,7 +48,9 @@ const Hero = () => {
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.9 }}
-        className="text-white/70 text-sm md:text-base mt-3 max-w-xl text-center relative z-10"
+        className="text-white/60 text-sm md:text-base 
+    inline-block mx-auto max-w-[500px]
+    text-center  relative mt-2 md:mt-4 z-10"
       >
         Rovand Limited — A global creative agency shaping brands with design,
         strategy, and technology.
@@ -61,14 +63,19 @@ const Hero = () => {
         transition={{ delay: 0.7, duration: 0.9 }}
         className="flex items-center justify-center gap-4 mt-8 relative z-10"
       >
-        <button className="px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 transition shadow-lg flex items-center gap-2">
-          Start a Project
-          <ArrowUpRight className="w-4 h-4" />
-        </button>
+       <a href="/about">
+  <button className="px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 transition shadow-lg flex items-center gap-2">
+    About US
+    <ArrowUpRight className="w-4 h-4" />
+  </button>
+</a>
 
-        <button className="px-6 py-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl text-white text-sm font-medium hover:bg-white/20 transition shadow-lg">
-          Our Brands
-        </button>
+<a href="/contact">
+  <button className="px-6 py-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl text-white text-sm font-medium hover:bg-white/20 transition shadow-lg">
+    Contact
+  </button>
+</a>
+
       </motion.div>
 
       {/* CARD */}

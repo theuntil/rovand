@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Our Brands", href: "/brands" },
-    { name: "About Us", href: "/about-us" },
+    { name: "About Us", href: "/about" },
+    { name: "Policies", href: "/policies" },
   ];
 
   useEffect(() => {
@@ -55,12 +55,13 @@ const Navbar = () => {
                             flex items-center justify-between gap-4">
 
               {/* LOGO */}
-              <img
-                src={LogoImg}
-                alt="Logo"
-                className="h-4 ml-5 w-auto object-contain"
-              />
-
+               <a href="/">
+    <img
+      src={LogoImg}
+      alt="Logo"
+      className="h-4 ml-5 w-auto object-contain cursor-pointer"
+    />
+  </a>
               {/* DESKTOP LINKS */}
               <ul className="hidden md:flex items-center gap-8">
                 {navigation.map((item) => (
