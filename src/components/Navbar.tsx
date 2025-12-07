@@ -50,7 +50,7 @@ const Navbar = () => {
               isScrolled ? "max-w-5xl mx-auto px-8" : "max-w-7xl mx-auto px-6"
             }`}
           >
-            <nav className="pointer-events-auto border border-white/10 rounded-full
+            <nav className="pointer-events-auto border border-white/4 rounded-full
                             bg-black/30 backdrop-blur-md px-4 md:px-5 py-4
                             flex items-center justify-between gap-4">
 

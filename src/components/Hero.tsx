@@ -45,16 +45,18 @@ const Hero = () => {
       />
 
       <motion.p
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.9 }}
-        className="text-white/60 text-sm md:text-base 
-    inline-block mx-auto max-w-[500px]
-    text-center  relative mt-2 md:mt-4 z-10"
-      >
-        Rovand Limited — A global creative agency shaping brands with design,
-        strategy, and technology.
-      </motion.p>
+  initial={{ opacity: 0, y: 25 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5, duration: 0.9 }}
+  className="
+    text-white/60 text-sm md:text-base 
+    max-w-[500px] text-center relative z-10
+    px-4 mx-auto mt-2
+  "
+>
+  Rovand Limited — A global creative agency shaping brands with design,
+  strategy, and technology.
+</motion.p>
 
       {/* BUTTONS */}
       <motion.div
