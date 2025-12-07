@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "backend": "node mail.cjs",
-    "bismillah": "concurrently \"npm run backend\" \"npm run dev\""
+    "dev": "concurrently \"npm run backend\" \"vite\""
   },
   "dependencies": {
     "@react-three/fiber": "^9.4.2",
