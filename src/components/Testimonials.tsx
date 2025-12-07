@@ -5,37 +5,37 @@ const testimonials = [
     text: `"Cadence completely changed how I work. I get more done in less time without feeling overwhelmed."`,
     name: "Emily R.",
     title: "Freelance Designer",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
   {
     text: `"I used to waste hours figuring out what to do next. Now, Cadence keeps me on track effortlessly."`,
     name: "Mark L.",
     title: "Startup Founder",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
   {
     text: `"The AI-powered insights helped me identify and fix my biggest productivity bottlenecks."`,
     name: "Sarah T.",
     title: "Remote Consultant",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
   {
     text: `"The AI-powered insights helped me identify and fix my biggest productivity bottlenecks."`,
     name: "Sarah T.",
     title: "Remote Consultant",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
   {
     text: `"Exactly what I needed to launch my AI productivity tool. The template feels premium, and I barely had to touch a line of code."`,
     name: "Jules Renner",
     title: "Indie Hacker",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
   {
     text: `"Cadence helped me bring my solo SaaS idea to life in record time. The structure is clean, the flow is intuitive, and the messaging just works."`,
     name: "Mina K.",
     title: "Founder at Taskpilot",
-    img: "http://localhost:5174/assets/user21.jpg",
+    img: "/user21.jpg",
   },
 ];
 

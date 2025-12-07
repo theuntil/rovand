@@ -21,7 +21,7 @@ const Footer = () => {
           {/* LOGO */}
           <div className="flex items-center gap-2">
             <img
-              src="/src/assets/rovand_logo.png"
+              src="/rovand_logo.png"
               className="h-5 object-contain opacity-90"
             />
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
               href="#"
               className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
             >
-              <img src="/src/assets/appstore.png" className="w-7" />
+              <img src="/appstore.png" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
                 <span className="text-[10px] text-black/70">Download on the</span>
                 <span className="text-[14px] font-semibold text-black">App Store</span>
@@ -98,7 +98,7 @@ const Footer = () => {
               href="#"
               className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
             >
-              <img src="/src/assets/googleplay.webp" className="w-7" />
+              <img src="/googleplay.webp" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
                 <span className="text-[10px] text-black/70">GET IT ON</span>
                 <span className="text-[14px] font-semibold text-black">Google Play</span>
@@ -110,7 +110,7 @@ const Footer = () => {
               href="#"
               className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
             >
-              <img src="/src/assets/appgallery.png" className="w-7" />
+              <img src="/appgallery.png" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
                 <span className="text-[10px] text-black/70">Explore it on</span>
                 <span className="text-[14px] font-semibold text-black">AppGallery</span>
