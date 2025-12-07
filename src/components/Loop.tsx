@@ -3,12 +3,12 @@ import LogoLoop from "./LogoLoop";
 
 export default function BrandsSection() {
   const techLogos = [
-    { src: "/favicon.png", alt: "logo1", href: "#" },
-    { src: "/favicon.png", alt: "logo2", href: "#" },
-    { src: "/favicon.png", alt: "logo3", href: "#" },
-    { src: "/favicon.png", alt: "logo4", href: "#" },
-    { src: "/favicon.png", alt: "logo5", href: "#" },
-    { src: "/favicon.png", alt: "logo6", href: "#" },
+    { src: "/src/assets/terra.png", alt: "logo1", href: "https://terrasoftware.co" },
+    { src: "/src/assets/callai.png", alt: "logo2", href: "https://callai.com.tr" },
+    { src: "/src/assets/kayserimedya.png", alt: "logo3", href: "https://kayserimedya.app" },
+    { src: "/src/assets/kuzeybati.png", alt: "logo4", href: "#" },
+    { src: "/src/assets/amazon.png", alt: "logo5", href: "#" },
+    
   ];
 
   return (

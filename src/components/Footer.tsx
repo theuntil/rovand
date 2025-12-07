@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import PolicyModal, { type Policy } from "../components/PolicyModal";
+import policiesData from "../data/policies.json";
 
 const Footer = () => {
+  const policies = policiesData as Policy[];
+
+  const [openPolicyId, setOpenPolicyId] = useState<string | null>(null);
+  const selectedPolicy = policies.find((p) => p.id === openPolicyId);
+
   return (
     <footer className="w-full bg-black pt-20 pb-12 px-6 border-t border-white/10">
       <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
@@ -34,7 +42,7 @@ const Footer = () => {
         </div>
 
         {/* ----------------------------------------------------------
-            2) CENTER COLUMN — NAVIGATION (Company + Socials)
+            2) CENTER COLUMN — COMPANY LINKS + POLICIES
         ---------------------------------------------------------- */}
         <div className="flex justify-between md:justify-start md:gap-24">
 
@@ -52,18 +60,25 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* SOCIALS */}
+          {/* POLICIES (MODAL TRIGGER) */}
           <div className="flex flex-col gap-4">
             <h4 className="text-white text-sm font-semibold tracking-wide">
-              SOCIALS
+              POLICIES
             </h4>
 
             <ul className="flex flex-col gap-2 text-white/60 text-sm">
-              <li className="hover:text-white transition cursor-pointer">Twitter (X)</li>
-              <li className="hover:text-white transition cursor-pointer">Instagram</li>
-              <li className="hover:text-white transition cursor-pointer">Facebook</li>
+              {policies.map((p) => (
+                <li
+                  key={p.id}
+                  onClick={() => setOpenPolicyId(p.id)}
+                  className="hover:text-white transition cursor-pointer"
+                >
+                  {p.title}
+                </li>
+              ))}
             </ul>
           </div>
+
         </div>
 
         {/* ----------------------------------------------------------
@@ -121,6 +136,14 @@ const Footer = () => {
       <div className="mt-16 text-center text-white/40 text-xs">
         © {new Date().getFullYear()} Rovand Limited. All rights reserved.
       </div>
+
+      {/* ------------------ MODAL ------------------ */}
+      <PolicyModal
+        open={openPolicyId !== null}
+        onClose={() => setOpenPolicyId(null)}
+        policy={selectedPolicy}
+      />
+
     </footer>
   );
 };
