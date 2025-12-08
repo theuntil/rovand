@@ -15,7 +15,7 @@ const NotFound = () => {
 
         {/* IMAGE LEFT (desktop), TOP (mobile) */}
         <img
-          src="/src/assets/london.png"
+          src="/london.png"
           alt="London Tower"
           className="
             w-56 md:w-80

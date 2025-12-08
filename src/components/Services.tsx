@@ -48,8 +48,8 @@ const Card = ({ title, text, img }: CardProps) => {
 const CardGrid = () => {
   const cards: CardProps[] = [
     {
-      title: "Your to-do list keeps growing.",
-      text: "Tasks pile up, and priorities blur.",
+      title: "Manage your day with our note app.",
+      text: "Never miss a task or idea again.",
       img: "https://framerusercontent.com/images/cwzp0bAskvny0SFl6KjmbTF5c.png?scale-down-to=1024&width=2080&height=1600",
     },
     {

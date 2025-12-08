@@ -37,7 +37,7 @@ const Hero = () => {
 
       {/* TEXT */}
       <BlurText
-        text="Elevating Brands with Revolution"
+        text="Always embrace change"
         delay={500}
         animateBy="words"
         direction="top"
@@ -54,8 +54,7 @@ const Hero = () => {
     px-4 mx-auto mt-2
   "
 >
-  Rovand Limited — A global creative agency shaping brands with design,
-  strategy, and technology.
+  Rovand Limited is a company that provides services helping users embrace change across all sectors.
 </motion.p>
 
       {/* BUTTONS */}

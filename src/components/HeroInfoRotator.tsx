@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const messages = [
-  { emoji: "🌍", text: "We reached over 100 million people worldwide." },
+  { emoji: "🌍", text: "We reached over 10 million people worldwide." },
   { emoji: "🚀", text: "Expanded from Europe into Asia and the Americas in 2026." },
   { emoji: "🤝", text: "Partnered with more than 5 global brands." },
   { emoji: "🏆", text: "Operating across 10+ diverse industry sectors." }
