@@ -51,7 +51,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5001/send-email", {
+      const res = await fetch("/api/send-email", {
 
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -96,13 +96,18 @@ const Contact = () => {
 
             <div>
               <p className="text-white/40 text-xs mb-1">Email</p>
+              <p className="text-white font-medium">contact@rovand.limited</p>
               <p className="text-white font-medium">ozenshopping.com@gmail.com</p>
+            </div>
+             <div>
+              <p className="text-white/40 text-xs mb-1">Phone</p>
+              <p className="text-white font-medium">+90 533 443 49 78</p>
             </div>
 
             <div>
               <p className="text-white/40 text-xs mb-1">Office Address</p>
               <p className="text-white font-medium">
-                London, United Kingdom
+                71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ
               </p>
             </div>
 

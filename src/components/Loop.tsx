@@ -5,8 +5,8 @@ export default function BrandsSection() {
   const techLogos = [
     { src: "/terra.png", alt: "logo1", href: "https://terrasoftware.co" },
     { src: "/callai.png", alt: "logo2", href: "https://callai.com.tr" },
-    { src: "/kayserimedya.png", alt: "logo3", href: "https://kayserimedya.app" },
-    { src: "/kuzeybati.png", alt: "logo4", href: "#" },
+    { src: "/kayserimedya.png", alt: "logo3", href: "#" },
+    { src: "/kuzeybati.png", alt: "logo4", href: "https://kuzeybatihaber.com.tr" },
     { src: "/amazon.png", alt: "logo5", href: "#" },
     
   ];
