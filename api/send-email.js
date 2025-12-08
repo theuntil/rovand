@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
         <!-- Logo Section -->
         <div style="text-align:center; margin-bottom:25px;">
-          <img src="/public/rovand_logo.png"
+          <img src="https://www.rovand.limited/rovand_logo.png"
                alt="Rovand Logo"
                style="width:120px; opacity:0.9;"/>
         </div>
