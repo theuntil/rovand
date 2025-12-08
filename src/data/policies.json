@@ -1,15 +1,36 @@
 [
   {
-    "id": "privacy",
-    "title": "Privacy Policy",
-    "content": [
-      "Rovand Limited (“we”, “our”, “us”) operates in the fields of e-commerce, software development, mobile applications and IT services. We do not collect, store or process any personal data from users unless it is explicitly provided by the user on their own initiative.",
-      "We do not use tracking technologies, analytics tools, cookies, user behaviour analytics or any mechanism that identifies individuals. Users may visit and use our website and services without providing personal information.",
-      "If a user voluntarily contacts us via email, any information provided is used solely for the purpose of responding to the enquiry. Such information is not stored, profiled, shared or transferred to third parties.",
-      "As we do not process personal data in a way that identifies individuals, we are not required to register with the ICO under the current UK data protection framework.",
-      "In the event that our data practices change in the future, this Privacy Policy will be updated to ensure compliance with UK GDPR and the Data Protection Act 2018."
-    ]
-  },
+  "id": "privacy",
+  "title": "Privacy Policy",
+  "content": [
+    "This Privacy Policy explains how ROVAND LTD ('we', 'us', 'our') collects, uses, and protects your personal information across all of our applications and services. By using our Services, you agree to this policy.",
+    "1. Information We Collect",
+    "We may collect personal information that you voluntarily provide when using our applications or contacting us. We do not process sensitive personal data. You are responsible for ensuring your information is accurate and up to date.",
+    "2. How We Use Your Information",
+    "We process your personal information to provide, improve, and manage our Services; communicate with you; prevent fraud and ensure security; comply with legal obligations; and use your data for additional purposes only with your explicit consent. We may also process information when necessary to protect someone's vital interests.",
+    "3. Legal Bases for Processing",
+    "Depending on your region, we may process your personal information based on your consent, legal obligations, contractual necessity, legitimate interests, or vital interests. For EU/UK users, we generally act as the data controller unless processing data on behalf of another organization.",
+    "4. When We Share Your Information",
+    "We may share your personal information only with service providers assisting us in delivering the Services or during business transfers such as mergers or acquisitions. We do not sell personal information.",
+    "5. Data Retention",
+    "We retain your information only as long as necessary for the purposes outlined in this policy unless a longer retention period is required by law. When no longer needed, data is deleted or anonymized.",
+    "6. Data Security",
+    "We use reasonable technical and organizational measures to protect your data. However, no system is 100% secure, and we cannot guarantee absolute protection. Use the Services in a secure environment whenever possible.",
+    "7. Children's Privacy",
+    "We do not knowingly collect or market personal data from users under 18. If such data is discovered, it will be deleted promptly.",
+    "8. Your Privacy Rights",
+    "Depending on your location, you may have the right to access, correct, or delete your personal information; restrict or object to processing; request data portability; or withdraw consent at any time. You may exercise your rights by contacting us.",
+    "9. Do-Not-Track Signals",
+    "Because there is no industry standard, we do not currently respond to Do-Not-Track browser signals.",
+    "10. Additional Rights for US Residents",
+    "Some US states provide additional rights, including access, correction, deletion, and opting out of certain data uses. Identity verification is required before processing such requests.",
+    "11. Changes to This Policy",
+    "This Privacy Policy may be updated periodically, and the latest version will always be available within our Services.",
+    "12. Contact Us",
+    "If you have questions or requests, contact us at: contact@rovand.limited or visit www.rovand.limited/contact. Address: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, England."
+  ]
+}
+,
   {
     "id": "cookies",
     "title": "Cookie Policy",
