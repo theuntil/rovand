@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-black pt-20 pb-12 px-6 border-t border-white/10">
-      <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
 
         {/* ----------------------------------------------------------
             1) LEFT COLUMN — LOGO + COMPANY INFO
@@ -83,37 +83,37 @@ const Footer = () => {
 
             {/* APP STORE */}
             <a
-              href="#"
-              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+              href="https://apps.apple.com/us/developer/rovand-ltd/id1877911901"
+              className="w-52 bg-black border  border-white/10 rounded-2xl flex items-center gap-3 py-4 pl-4 shadow-md hover:opacity-90 transition"
             >
               <img src="/appstore.png" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">Download on the</span>
-                <span className="text-[14px] font-semibold text-black">App Store</span>
+                <span className="text-[10px] text-white/70">Download on the</span>
+                <span className="text-[14px] font-semibold text-white">App Store</span>
               </div>
             </a>
 
             {/* GOOGLE PLAY */}
             <a
-              href="#"
-              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+              href="https://play.google.com/store/apps/dev?id=7529641658741841420"
+              className="w-52 bg-black border border-white/10 rounded-2xl flex items-center gap-3 py-4 pl-4 shadow-md hover:opacity-90 transition"
             >
               <img src="/googleplay.webp" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">GET IT ON</span>
-                <span className="text-[14px] font-semibold text-black">Google Play</span>
+                <span className="text-[10px] text-white/70">GET IT ON</span>
+                <span className="text-[14px] font-semibold text-white">Google Play</span>
               </div>
             </a>
 
             {/* APP GALLERY */}
             <a
               href="#"
-              className="w-52 bg-white rounded-2xl flex items-center gap-3 py-3 pl-4 shadow-md hover:opacity-90 transition"
+              className="w-52 bg-black border border-white/10 rounded-2xl flex items-center gap-3 py-4 pl-4 shadow-md hover:opacity-90 transition"
             >
               <img src="/appgallery.png" className="w-7" />
               <div className="flex flex-col leading-tight text-left">
-                <span className="text-[10px] text-black/70">Explore it on</span>
-                <span className="text-[14px] font-semibold text-black">AppGallery</span>
+                <span className="text-[10px] text-white/70">Explore it on</span>
+                <span className="text-[14px] font-semibold text-white">AppGallery</span>
               </div>
             </a>
 

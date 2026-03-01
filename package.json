@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "backend": "node /api/send-email.js",
+    "backend": "node api/send-email.js",
     "dev": "concurrently \"npm run backend\" \"vite\""
   },
   "dependencies": {

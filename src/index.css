@@ -72,3 +72,13 @@ body {background-color: black;}
 html {
   scroll-behavior: smooth;
 }
+
+
+/* ===== CTA ITALIC FONT ===== */
+@font-face {
+  font-family: "CTAItalic";
+  src: url("/fonts/italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

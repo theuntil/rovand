@@ -9,11 +9,11 @@ const About = () => {
                 HERO — Large Intro
         -------------------------------------------------- */}
         <div className="text-center flex flex-col items-center mt-20 gap-6">
-          <h1 className="text-3xl md:text-3xl  tracking-tight">
+          <h1 className="text-4xl  tracking-tight">
             About Rovand
           </h1>
 
-          <p className="text-white/60 text-xs max-w-2xl leading-relaxed">
+          <p className="text-white/60 text-md max-w-2xl leading-relaxed">
           Rovand is a global technology company focused on empowering businesses 
 through intelligent automation, AI-driven tools, modern software solutions, 
 and advanced e-commerce operations. 
@@ -30,7 +30,7 @@ industry we touch — from artificial intelligence to automated commerce.
         -------------------------------------------------- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Mission */}
-          <div className="bg-black border border-white/10 p-8 rounded-2xl backdrop-blur-xl">
+          <div className="bg-black border border-white/10 p-8 rounded-4xl backdrop-blur-xl">
             <div className="flex items-center gap-3 mb-4">
               <Target className="w-6 h-6 text-green-400" />
               <h2 className="text-xl font-semibold">Our Mission</h2>
@@ -43,7 +43,7 @@ industry we touch — from artificial intelligence to automated commerce.
           </div>
 
           {/* Vision */}
-          <div className="bg-black border border-white/10 p-8 rounded-2xl backdrop-blur-xl">
+          <div className="bg-black border border-white/10 p-8 rounded-4xl backdrop-blur-xl">
             <div className="flex items-center gap-3 mb-4">
               <Rocket className="w-6 h-6 text-blue-400" />
               <h2 className="text-xl font-semibold">Our Vision</h2>
@@ -63,7 +63,7 @@ industry we touch — from artificial intelligence to automated commerce.
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <div className="p-7 bg-black border border-white/10 rounded-2xl backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="p-7 bg-black border border-white/10 rounded-3xl backdrop-blur-xl hover:bg-white/10 transition">
               <Briefcase className="w-8 h-8 text-purple-400 mb-4" />
               <h3 className="font-semibold mb-2">Business Automation</h3>
               <p className="text-white/60 text-sm">
@@ -71,7 +71,7 @@ industry we touch — from artificial intelligence to automated commerce.
               </p>
             </div>
 
-            <div className="p-7 bg-black border border-white/10 rounded-2xl backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="p-7 bg-black border border-white/10 rounded-3xl backdrop-blur-xl hover:bg-white/10 transition">
               <Users className="w-8 h-8 text-yellow-300 mb-4" />
               <h3 className="font-semibold mb-2">AI-Powered Assistants</h3>
               <p className="text-white/60 text-sm">
@@ -79,7 +79,7 @@ industry we touch — from artificial intelligence to automated commerce.
               </p>
             </div>
 
-            <div className="p-7 bg-black border border-white/10 rounded-2xl backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="p-7 bg-black border border-white/10 rounded-3xl backdrop-blur-xl hover:bg-white/10 transition">
               <Globe2 className="w-8 h-8 text-green-300 mb-4" />
               <h3 className="font-semibold mb-2">Global Solutions</h3>
               <p className="text-white/60 text-sm">

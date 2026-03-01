@@ -79,8 +79,8 @@ const Navbar = () => {
               {/* DESKTOP CTA */}
               <a
                 href="/contact"
-                className="hidden md:flex rounded-full bg-white text-black
-                           hover:bg-white/90 px-4 py-1.5 text-sm shadow"
+                className="hidden md:flex rounded-full bg-white/10 border border-white/10 text-white
+                           hover:bg-white/30 transition px-4.5 py-2.5 text-sm shadow"
               >
                 Contact Us
               </a>

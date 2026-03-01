@@ -83,20 +83,20 @@ const FAQItem = ({
   }, [isOpen]);
 
   return (
-    <div
-      className="
-        bg-[#00000]
-        border border-white/10
-        rounded-xl
-        p-4
-        cursor-pointer
-        transition
-      "
-      onClick={onToggle}
+  <div
+  className="
+    bg-[#000000]
+    border border-white/10
+    rounded-2xl
+    px-8 py-6
+    min-h-[72px]
+    cursor-pointer
+    transition
+  "     onClick={onToggle}
     >
       {/* Question Row */}
       <div className="flex items-center justify-between">
-        <span className="text-white text-[12px] text-light ">{q}</span>
+        <span className="text-white text-[14px] text-light ">{q}</span>
 
         <ChevronDown
           size={20}
@@ -111,7 +111,7 @@ const FAQItem = ({
         className="overflow-hidden transition-all duration-300"
         style={{ height }}
       >
-        <div ref={ref} className="mt-3 text-white/60 text-[11px] leading-relaxed pb-2">
+        <div ref={ref} className="mt-3 text-white/60 text-[14px] leading-relaxed pb-2">
           {a}
         </div>
       </div>
@@ -125,7 +125,7 @@ const FAQSection = () => {
   return (
     <section className="w-full bg-black py-24 px-6">
       {/* TITLE */}
-      <div className="max-w-[700px] mx-auto text-center">
+      <div className="max-w-[1000px] mx-auto text-center">
         <h2 className="text-white text-3xl font-light">
           Frequently Asked Questions
         </h2>
@@ -135,7 +135,7 @@ const FAQSection = () => {
       </div>
 
       {/* FAQ LIST */}
-      <div className="mt-12 flex flex-col gap-4 max-w-[700px] mx-auto">
+      <div className="mt-12 flex flex-col gap-4 max-w-[1000px] mx-auto">
         {faqs.map((item, i) => (
           <FAQItem
             key={i}

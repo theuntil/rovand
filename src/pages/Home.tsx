@@ -1,7 +1,9 @@
 
 import Hero from "../components/Hero";
-import Services from "../components/Services";
-import Reviews from "../components/Testimonials";
+import H1 from "../components/rcom";
+import Fet from "../components/cards";
+import Fot from "../components/fot.tsx";
+
 
 import FAQ from "../components/FAQ";
 import Loop from "../components/Loop";
@@ -13,11 +15,14 @@ export default function Home() {
       <Hero />
 
        <Loop />
-      <Services />
-      <Reviews />
+     
+
+      <H1/>
+         <Fet />
+     
       
       <FAQ />
-      
+            <Fot />
     </div>
   );
 }

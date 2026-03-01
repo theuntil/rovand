@@ -100,14 +100,25 @@ const Contact = () => {
               <p className="text-white font-medium">ozenshopping.com@gmail.com</p>
             </div>
              <div>
-              <p className="text-white/40 text-xs mb-1">Phone</p>
-              <p className="text-white font-medium">+90 533 443 49 78</p>
+              <p className="text-white/40 text-xs mb-1">Phone UK</p>
+             
+               <p className="text-white font-medium">+44 7365 953883 UK</p>
+            </div>   <div>
+              <p className="text-white/40 text-xs mb-1">Phone TR</p>
+              <p className="text-white font-medium">+90 533 443 49 78 TR</p>
+              
             </div>
 
             <div>
-              <p className="text-white/40 text-xs mb-1">Office Address</p>
+              <p className="text-white/40 text-xs mb-1">Office Address England</p>
               <p className="text-white font-medium">
                 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ
+              </p>
+            </div>
+             <div>
+              <p className="text-white/40 text-xs mb-1">Office Address Türkiye</p>
+              <p className="text-white font-medium">
+              38280 Kayseri, Turkey
               </p>
             </div>
 
